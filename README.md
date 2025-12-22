@@ -18,22 +18,26 @@ Adds a prefix to all files in a directory and its subdirectories.
 # Renames photo.jpg -> backup_photo.jpg
 ```
 
-### rename-dirs-spaces.sh
+### rename-files-spaces.sh
 
-Replaces spaces with underscores in folder names. Runs in interactive mode by default.
+Replaces spaces with underscores in file and folder names. Runs in interactive mode by default.
 
 ```bash
-./rename-dirs-spaces.sh [--non-interactive] <directory>
+./rename-files-spaces.sh [-y|--yes|--non-interactive] <directory>
 ```
 
 **Options:**
-- `--non-interactive` - Rename without asking for confirmation
+- `-y, --yes` - Auto-confirm all renames (shows each rename)
+- `--non-interactive` - Rename silently without prompts
 
 **Example:**
 ```bash
-./rename-dirs-spaces.sh ./documents
-# Interactive: asks before renaming "My Folder" -> "My_Folder"
+./rename-files-spaces.sh ./documents
+# Interactive: asks before renaming "My File.txt" -> "My_File.txt"
 
-./rename-dirs-spaces.sh --non-interactive ./documents
-# Renames all folders with spaces automatically
+./rename-files-spaces.sh -y ./documents
+# Auto-confirms all renames, showing each one
+
+./rename-files-spaces.sh --non-interactive ./documents
+# Renames all files/folders with spaces silently
 ```
