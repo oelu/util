@@ -1,5 +1,13 @@
 # util
 
+<!-- TOC -->
+- [Scripts](#scripts)
+  - [prefix-files.sh](#prefix-filessh)
+  - [rename-files-spaces.sh](#rename-files-spacessh)
+  - [httpproxy.py](#httpproxypy)
+  - [markdown-toc.py](#markdown-tocpy)
+<!-- /TOC -->
+
 A collection of utility scripts.
 
 ## Scripts
