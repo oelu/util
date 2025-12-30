@@ -1,18 +1,16 @@
 # util
 
 <!-- TOC -->
-- [Scripts](#scripts)
-  - [prefix-files.sh](#prefix-filessh)
-  - [rename-files-spaces.sh](#rename-files-spacessh)
-  - [httpproxy.py](#httpproxypy)
-  - [markdown-toc.py](#markdown-tocpy)
+- [prefix-files.sh](#prefix-filessh)
+- [rename-files-spaces.sh](#rename-files-spacessh)
+- [httpproxy.py](#httpproxypy)
+- [markdown-toc.py](#markdown-tocpy)
 <!-- /TOC -->
+
 
 A collection of utility scripts.
 
-## Scripts
-
-### prefix-files.sh
+# prefix-files.sh
 
 Adds a prefix to all files in a directory and its subdirectories.
 
@@ -26,7 +24,7 @@ Adds a prefix to all files in a directory and its subdirectories.
 # Renames photo.jpg -> backup_photo.jpg
 ```
 
-### rename-files-spaces.sh
+# rename-files-spaces.sh
 
 Replaces spaces with underscores in file and folder names. Runs in interactive mode by default.
 
@@ -50,7 +48,7 @@ Replaces spaces with underscores in file and folder names. Runs in interactive m
 # Renames all files/folders with spaces silently
 ```
 
-### httpproxy.py
+# httpproxy.py
 
 MITM proxy for HTTP troubleshooting using the mitmproxy library.
 
@@ -102,7 +100,7 @@ curl -x http://localhost:8080 -k https://example.com
 curl -x http://localhost:8080 --cacert ca.crt https://example.com
 ```
 
-### markdown-toc.py
+# markdown-toc.py
 
 Generates and inserts a table of contents into markdown files. Inserts TOC after the first heading, wrapped in `<!-- TOC -->` markers for idempotent re-runs.
 
